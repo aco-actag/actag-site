@@ -1,69 +1,218 @@
-<!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ACTAG</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
-      background: #f7f4ee;
-      color: #1f2f2b;
-      line-height: 1.9;
-    }
-    main {
-      max-width: 720px;
-      padding: 48px 24px;
-    }
-    h1 {
-      font-size: 44px;
-      letter-spacing: 0.08em;
-      margin-bottom: 8px;
-    }
-    .tagline {
-      font-size: 18px;
-      margin-bottom: 40px;
-    }
-    hr {
-      border: 0;
-      border-top: 1px solid #c9c0b3;
-      margin: 32px 0;
-    }
-    a {
-      color: #1f2f2b;
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <h1>ACTAG</h1>
-    <div class="tagline">
-      Human State Transition Design<br>
-      状態と認知の体験設計
-    </div>
+<!-- index.html に貼り替え -->
+<section class="hero">
+  <header>
+    <div class="logo">ACTAG</div>
+    <nav>
+      <a>About</a><a>Concept</a><a>Approach</a><a>Contact</a>
+    </nav>
+  </header>
 
-    <hr>
+  <div class="heroText">
+    <h1>人の可能性が、<br>自然にひらく社会へ。</h1>
+    <p>Human State Transition Design</p>
+  </div>
+</section>
 
+<section class="about">
+  <div>
+    <p class="label">About ACTAG</p>
+    <h2>人間の状態遷移をデザインする</h2>
     <p>
-      私は、<br>
-      対話型鑑賞、ワークショップデザイン、<br>
-      ニューロダイバーシティの探究を通じて、<br><br>
-      「人と組織の応答可能性」<br><br>
-      をテーマに活動しています。
+      ACTAGは、思考と直感、個と社会、テクノロジーと自然のあいだにある
+      「遷り変わりのデザイン」を探求し、人の可能性が自然にひらく条件を耕します。
     </p>
+  </div>
+  <div class="imageBox"></div>
+</section>
 
-    <hr>
-
-    <p>現在準備中です。</p>
-
+<section class="concept">
+  <div>
+    <p class="label">Approach</p>
+    <h2>点ではなく、波として。</h2>
     <p>
-      お問い合わせ<br>
-      <a href="mailto:aco@actag.jp">aco@actag.jp</a>
+      人は常に、状態の間をゆらぎ、つながり、変容しています。
+      ACTAGは、その流れを観察し、整え、デザインすることで、
+      より自然な遷移を生み出していきます。
     </p>
-  </main>
-</body>
-</html>
+  </div>
+  <div class="diagram">ACTAG</div>
+</section>
+
+<section class="banner">
+  <span>事業・研究・デザインのアプローチ</span>
+  <span>→</span>
+</section>
+
+<footer>
+  <div>
+    <p>Contact</p>
+    <p>aco@actag.jp</p>
+  </div>
+  <div class="footerLogo">ACTAG</div>
+  <div>
+    <p>ACTAG</p>
+    <p>Nagano, Japan</p>
+  </div>
+</footer>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Cormorant Garamond", "Yu Mincho", serif;
+    color: #143226;
+    background: #f8f8f3;
+    letter-spacing: .06em;
+  }
+
+  header {
+    position: absolute;
+    top: 32px;
+    left: 48px;
+    right: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .logo {
+    font-size: 24px;
+    letter-spacing: .35em;
+  }
+
+  nav a {
+    margin-left: 42px;
+    font-size: 14px;
+  }
+
+  .hero {
+    position: relative;
+    height: 92vh;
+    background:
+      linear-gradient(to bottom, rgba(255,255,255,.15), rgba(255,255,255,.4)),
+      linear-gradient(120deg, #f7f7ef 0%, #eef3e8 35%, #6f8f5e 100%);
+    overflow: hidden;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    height: 72%;
+    background:
+      radial-gradient(circle at 80% 20%, rgba(255,255,255,.9), transparent 20%),
+      linear-gradient(135deg, transparent 0%, rgba(48,92,65,.35) 100%);
+    clip-path: polygon(10% 40%, 100% 0, 100% 100%, 0 100%);
+    opacity: .9;
+  }
+
+  .heroText {
+    position: absolute;
+    left: 9%;
+    top: 32%;
+    z-index: 2;
+  }
+
+  h1 {
+    font-size: clamp(34px, 4vw, 64px);
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0 0 24px;
+  }
+
+  .heroText p {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 110px 9%;
+  }
+
+  .about,
+  .concept {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .label {
+    font-size: 14px;
+    color: #6d7c70;
+    margin-bottom: 28px;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+
+  p {
+    line-height: 2.1;
+    font-size: 16px;
+  }
+
+  .imageBox {
+    height: 360px;
+    background:
+      radial-gradient(circle at 40% 30%, rgba(255,255,255,.9), transparent 18%),
+      linear-gradient(135deg, #dfeadd, #4f7a4d);
+    border-radius: 2px;
+  }
+
+  .concept {
+    background: #fbfbf6;
+  }
+
+  .diagram {
+    width: 260px;
+    height: 260px;
+    margin: auto;
+    border: 1px solid rgba(20,50,38,.25);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    letter-spacing: .35em;
+    font-size: 26px;
+  }
+
+  .banner {
+    padding: 64px 9%;
+    background:
+      linear-gradient(90deg, rgba(20,50,38,.75), rgba(20,50,38,.25)),
+      #274b39;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+  }
+
+  footer {
+    padding: 72px 9%;
+    background: #143226;
+    color: #f5f1e8;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footerLogo {
+    text-align: center;
+    letter-spacing: .35em;
+    font-size: 24px;
+  }
+
+  @media (max-width: 800px) {
+    nav { display: none; }
+    .about, .concept, footer {
+      grid-template-columns: 1fr;
+    }
+    .heroText {
+      left: 7%;
+      right: 7%;
+    }
+  }
+</style>
