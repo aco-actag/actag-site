@@ -110,7 +110,9 @@
     grid-template-columns:1fr 1fr;
     gap:80px;
     }
-    
+    .mobile-break {
+    display: none;
+    }
     .concept{
     background:#fbfbf6;
     text-align:center;
@@ -247,6 +249,13 @@
       }
 
       .about,
+      .aboutImage {
+        height: 180px;
+        object-fit: cover;
+      }
+      .mobile-break {
+        display: inline;
+      }
       .concept,
       .approach {
         grid-template-columns: 1fr;
@@ -327,7 +336,10 @@
     <div>
       <p class="label">About ACTAG</p>
 
-      <h2>人間の状態遷移をデザインする</h2>
+      <h2>
+        人間の状態遷移を
+        <span class="mobile-break"><br></span>
+        デザインする</h2>
 
       <p>
         ACTAGは、思考と直感、個と社会、テクノロジーと自然のあいだにある
