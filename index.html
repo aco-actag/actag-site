@@ -231,6 +231,7 @@
         right: 0;
         flex-direction: column;
         background: rgba(248,248,243,.97);
+        color: #143226;
         padding: 24px;
         box-shadow: 0 10px 30px rgba(0,0,0,.08);
       }
@@ -246,6 +247,16 @@
 
       .about,
       .concept,
+      .approach {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    
+      .approachImage {
+        order: -1;
+        height: 420px;
+      }
+      
       footer {
         grid-template-columns: 1fr;
       }
