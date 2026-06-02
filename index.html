@@ -143,24 +143,36 @@
 
     .imageBox {
       height: 500px;
-
-  background-image: url("images/asama.jpg");
-
-  background-size: cover;
-
-  background-position: center;
-
-  border-radius: 2px;
+      background-image: url("images/asama.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 2px;
     }
 
     .concept {
       background: #fbfbf6;
+      text-align: center;
     }
-
+    
+    .conceptInner {
+      max-width: 760px;
+      margin: 0 auto 72px;
+    }
+    
+    .concept .label {
+      margin-bottom: 28px;
+    }
+    
+    .concept p {
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
     .diagram {
-      width: 260px;
-      height: 260px;
-      margin: auto;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
       border: 1px solid rgba(20,50,38,.25);
       border-radius: 50%;
       display: grid;
@@ -308,21 +320,16 @@
   </section>
 
   <section id="concept" class="concept">
-
-    <div>
-      <p class="label">Concept</p>
-
-      <h2>点ではなく、波として。</h2>
-
-      <p>
-        人は常に、状態の間をゆらぎ、つながり、変容しています。
-        ACTAGは、その流れを観察し、整え、デザインすることで、
-        より自然な遷移を生み出していきます。
-      </p>
-    </div>
-
-    <div class="diagram">ACTAG</div>
-
+  <div class="conceptInner">
+    <p class="label">Concept</p>
+    <h2>点ではなく、波として。</h2>
+    <p>
+      人は常に、状態の間をゆらぎ、つながり、変容しています。
+      ACTAGは、その流れを観察し、整え、デザインすることで、
+      より自然な遷移を生み出していきます。
+    </p>
+  </div>
+  <div class="diagram">ACTAG</div>
   </section>
   
   <section class="approach">
