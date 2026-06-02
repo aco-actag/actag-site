@@ -250,10 +250,13 @@
         font-size: 18px;
       }
 
-      .about,
-      .aboutImage {
+      .about {
+        grid-template-columns: 1fr;
+      }
+      .imageBox {
         height: 180px;
-        object-fit: cover;
+        background-size: cover;
+        background-position: center;
       }
       .mobile-break {
         display: inline;
